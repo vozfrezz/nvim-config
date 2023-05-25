@@ -11,12 +11,12 @@ local function on_init(client)
     end
 end
 
-local share_dir = os.getenv("HOME") .. "/.local/share"
+local share_dir = os.getenv("USERPROFILE") .. "/.local/share"
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = share_dir .. "/eclipse/" .. project_name
 
 -- Set proper Java executable
-local java_cmd = '/opt/java/jdk-18/bin/java'
+local java_cmd = 'C:/Users/TueKhac/scoop/apps/openjdk/current/bin/java'
 local mason_registry = require("mason-registry")
 
 local bundles = {

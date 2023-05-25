@@ -17,7 +17,7 @@ toggleterm.setup {
     open_mapping = [[<leader>vt]],
     insert_mappings = false,
     --direction = 'vertical' | 'horizontal' | 'tab' | 'float',
-    direction = "vertical",
+    direction = "horizontal",
     close_on_exit = true, -- close the terminal window when the process exits
-    shell = "/usr/bin/zsh", -- change the default shell
+    shell = "%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe"-- change the default shell
 }
