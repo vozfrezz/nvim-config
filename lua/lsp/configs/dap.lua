@@ -69,6 +69,28 @@ dap.listeners.before.event_terminated["dapui_config"] = function()
     dapui.close()
 end
 
+dap.configurations.java = {
+  {
+     -- You need to extend the classPath to list your dependencies.
+     -- `nvim-jdtls` would automatically add the `classPaths` property if it is missing
+    classPaths = {"C:/Users/TueKhac/scoop/apps/openjdk/current/lib/jrt-fs.jar"},
+
+    -- If using multi-module projects, remove otherwise.
+    projectName = "yourProjectName",
+
+    javaExec = "C:/Users/TueKhac/scoop/apps/openjdk/current/bin/java",
+    mainClass = "${file}",
+
+    -- If using the JDK9+ module system, this needs to be extended
+    -- `nvim-jdtls` would automatically populate this property
+    modulePaths = {},
+    name = "Launch YourClassName",
+    request = "launch",
+    type = "java"
+  },
+}
+
+
 
  -- codelldb
 -- dap.adapters.codelldb = {
