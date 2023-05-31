@@ -5,10 +5,11 @@ if not ok then
 end
 
 -- BackSpace as leader key
-vim.g.mapleader = vim.api.nvim_replace_termcodes('<BS>', false, false, true)
+--vim.g.mapleader = vim.api.nvim_replace_termcodes('<BS>', false, false, true)
 --vim.api.nvim_set_keymap('n', vim.g.mapleader..'cj', ':!javac %<CR>:FloatermNew<CR>', {})
 -- vim.g.mapleader = ' '
 -- vim.g.maplocalleader = ' '
+vim.g.mapleader = ","
 
 -- NORMAL MODE MAPPINGS
 local n_opts = {

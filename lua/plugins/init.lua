@@ -310,7 +310,7 @@ local plugins = {
             require "plugins.configs.tmux"
         end
     },
-
+    { "lukas-reineke/indent-blankline.nvim" },
     ---- Git
     {
         -- Add git related info in the signs columns and popups
